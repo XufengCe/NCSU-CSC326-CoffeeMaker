@@ -1,28 +1,40 @@
+/**
+ * 
+ */
 package dailymixes;
 
-//Virginia Tech Honor Code Pledge:
+// Virginia Tech Honor Code Pledge:
 //
-//As a Hokie, I will conduct myself with honor and integrity at all times.
-//I will not lie, cheat, or steal, nor will I accept the actions of those who
-//do.
-//-- Haowen Zhang (Hw109)
-// -------------------------------------------------------------------------
+// As a Hokie, I will conduct myself with honor and integrity at all times.
+// I will not lie, cheat, or steal, nor will I accept the actions of those who
+// do.
+// -- Qitao Yang(yqitao)
 /**
- * Write a one-sentence summary of your class here. Follow it with additional
- * details about its purpose, what abstraction it represents, and how to use it.
+ * /**
+ * This is the class that will throw a DailyMixDataException
  * 
- * @author Hw109
- * @version 2023年11月3日
+ * @author Qitao Yang
+ * @version 04.11.2023
+ *
  */
-public class DailyMixDataException
-{
-    // ~ Fields ................................................................
-
-    // ~ Constructors ..........................................................
-    public DailyMixDataException(String string)
-    {
-
+@SuppressWarnings("serial")
+public class DailyMixDataException extends Exception {
+    /**
+     * This is the constructor with a parameter for DailyMixDataException
+     * 
+     * @param string
+     *            a string value
+     */
+    public DailyMixDataException(String string) {
+        super(string);
     }
-    // ~Public Methods ........................................................
+
+
+    /**
+     * This is the constructor with no parameter for DailyMixDataException
+     */
+    public DailyMixDataException() {
+        this(null);
+    }
 
 }
